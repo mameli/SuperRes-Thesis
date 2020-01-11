@@ -1,0 +1,48 @@
+\chapter{Risultati}
+
+\section{Metriche}
+
+\begin{tabular}{lllll}
+            & SSIM   & LPIPS  & BRISQUE Out & NIQE Out \\
+LPIPS Patch & 0.7443 & 0.1726 & 89.95       & 17.90    \\
+MSE         & 0.69   & 0.1462 & 85.98       & 16.68    \\
+SSIM loss   & 0.6919 & 0.1933 & 84.74       & 17.55    \\
+Target      &        &        & 85.32       & 15.69   
+\end{tabular}
+
+\begin{figure}[h]
+      \includegraphics[scale=0.5]{img/flower_512_validation.png}
+      \caption{Immagine di partenza}
+      \centering
+\end{figure}
+
+\begin{figure}[h]
+      \includegraphics[scale=0.5]{img/flower_512_MSE.png}
+      \caption{Immagine generata usando MSE loss}
+      \centering
+\end{figure}
+
+
+\begin{figure}[h]
+      \includegraphics[scale=0.5]{img/flower_512_patches64px.png}
+      \caption{Immagine generata usando LPIPS loss su patch}
+      \centering
+\end{figure}
+
+% \begin{figure}[h]
+%       \includegraphics[scale=1.0]{img/flower_512_validation_crop.png}
+%       \caption{Crop dell'immagine di partenza}
+%       \centering
+% \end{figure}
+
+\begin{figure}[h]
+      \includegraphics[scale=1.0]{img/flower_512_MSE_crop.png}
+      \caption{Crop dell'immagine generata usando MSE loss}
+      \centering
+\end{figure}
+
+\begin{figure}[h]
+      \includegraphics[ scale=1.0]{img/flower_512_patches64px_crop.png}
+      \caption{Crop dell'immagine generata usando LPIPS loss su patch}
+      \centering
+\end{figure}
